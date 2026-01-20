@@ -1,0 +1,42 @@
+qualifications:
+  - id: 1
+    name: RGE
+    shortName: RGE
+    description: "Reconnu Garant de l'Environnement"
+    bgColor: "linear-gradient(135deg, #2e7d32, #43a047)"
+    textColor: "#ffffff"
+
+  - id: 2
+    name: QualiPAC
+    shortName: PAC
+    description: Qualification Pompes à Chaleur
+    bgColor: "linear-gradient(135deg, #1565c0, #42a5f5)"
+    textColor: "#ffffff"
+
+  - id: 3
+    name: Qualibat
+    shortName: QB
+    description: Qualification Bâtiment
+    bgColor: "linear-gradient(135deg, #c62828, #ef5350)"
+    textColor: "#ffffff"
+
+  - id: 4
+    name: Qualibois
+    shortName: BOIS
+    description: Qualification Chauffage Bois
+    bgColor: "linear-gradient(135deg, #6d4c41, #8d6e63)"
+    textColor: "#ffffff"
+
+  - id: 5
+    name: QualiSOL
+    shortName: SOL
+    description: Qualification Solaire Thermique
+    bgColor: "linear-gradient(135deg, #f57c00, #ffb74d)"
+    textColor: "#ffffff"
+
+  - id: 6
+    name: PG
+    shortName: PG
+    description: Professionnel du Gaz
+    bgColor: "linear-gradient(135deg, #5c6bc0, #7986cb)"
+    textColor: "#ffffff"

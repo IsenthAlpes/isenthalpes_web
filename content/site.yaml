@@ -1,0 +1,31 @@
+name: "ISENTH'ALPES"
+tagline: Votre partenaire de confiance pour tous vos projets de confort thermique haut de gamme dans les Alpes
+phone: "04 XX XX XX XX"
+email: contact@isenthalpes.fr
+address:
+  city: Grenoble
+  postalCode: "38000"
+  region: Isère
+  country: FR
+geo:
+  latitude: 45.188529
+  longitude: 5.724524
+  region: FR-ARA
+social:
+  facebook: "#"
+  linkedin: "#"
+  instagram: "#"
+seo:
+  defaultTitle: "Plombier Chauffagiste Grenoble | ISENTH'ALPES - Climatisation & Plomberie"
+  defaultDescription: "ISENTH'ALPES - Plombier chauffagiste à Grenoble. Expert en plomberie, chauffage et climatisation haut de gamme. Installation, dépannage et maintenance. Devis gratuit."
+  keywords:
+    - plombier Grenoble
+    - chauffagiste Grenoble
+    - plomberie Grenoble
+    - climatisation Grenoble
+    - pompe à chaleur Grenoble
+    - dépannage chauffage
+    - installation climatisation
+    - plombier Isère
+    - chauffagiste Isère
+    - RGE Grenoble

@@ -1,0 +1,11 @@
+title: Service & Maintenance
+subtitle: "Accompagnement et maintenance de vos installations tout au long de l'année"
+sectionTitle: Exemples de prestations de service
+sectionDescription: Découvrez nos interventions de maintenance, dépannage et optimisation
+ctaTitle: Besoin d'une intervention ou d'un contrat ?
+ctaDescription: Contactez-nous pour un diagnostic gratuit
+ctaButtonText: Nous contacter
+heroImage: https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80
+overlayGradient: "linear-gradient(135deg, rgba(199, 109, 57, 0.9) 0%, rgba(139, 69, 19, 0.85) 100%)"
+badgeGradient: "linear-gradient(135deg, var(--primary-color), var(--secondary-color))"
+priceColor: "var(--primary-color)"

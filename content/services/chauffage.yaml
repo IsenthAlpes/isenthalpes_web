@@ -1,0 +1,10 @@
+title: Chauffage
+subtitle: Solutions de chauffage premium pour un confort optimal toute l'année
+sectionTitle: Projets de chauffage réalisés
+sectionDescription: Découvrez nos installations et rénovations de systèmes de chauffage haut de gamme
+ctaTitle: Vous avez un projet de chauffage ?
+ctaDescription: Contactez-nous pour un devis personnalisé et gratuit
+heroImage: https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80
+overlayGradient: "linear-gradient(135deg, rgba(230, 126, 34, 0.9) 0%, rgba(211, 84, 0, 0.85) 100%)"
+badgeGradient: "linear-gradient(135deg, #e67e22, #d35400)"
+priceColor: "#e67e22"

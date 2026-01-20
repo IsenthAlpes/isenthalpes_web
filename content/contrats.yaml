@@ -1,0 +1,39 @@
+contracts:
+  - id: 1
+    name: Essentiel
+    price: 190
+    period: an
+    featured: false
+    colorTheme: essentiel
+    features:
+      - "1 visite d'entretien annuelle"
+      - Vérification complète
+      - "Rapport d'intervention"
+      - Assistance téléphonique
+
+  - id: 2
+    name: Confort
+    price: 350
+    period: an
+    featured: true
+    badge: Populaire
+    colorTheme: confort
+    features:
+      - "2 visites d'entretien annuelles"
+      - Dépannage prioritaire 48h
+      - "Main d'œuvre incluse"
+      - "-15% sur les pièces"
+      - Assistance 7j/7
+
+  - id: 3
+    name: Premium
+    price: 590
+    period: an
+    featured: false
+    colorTheme: premium
+    features:
+      - Visites illimitées
+      - Dépannage urgent 24h
+      - "Pièces & main d'œuvre incluses"
+      - Télésurveillance connectée
+      - Interlocuteur dédié

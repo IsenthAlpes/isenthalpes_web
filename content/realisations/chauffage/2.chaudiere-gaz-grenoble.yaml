@@ -1,0 +1,16 @@
+title: Chaudière gaz condensation - Appartement Grenoble
+description: "Installation d'une chaudière gaz à condensation murale avec production d'eau chaude instantanée."
+type: Chaudière gaz
+duration: 3 jours
+price: "4 800 €"
+order: 2
+images:
+  - https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+features:
+  - Viessmann Vitodens 100-W
+  - Rendement 98%
+  - Thermostat connecté Nest
+  - Garantie 5 ans

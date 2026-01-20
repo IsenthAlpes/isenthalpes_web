@@ -1,0 +1,16 @@
+title: Mise en service PAC - Villa Talloires
+description: "Mise en service et paramétrage d'une pompe à chaleur géothermique nouvellement installée."
+type: Mise en service
+duration: 1 journée
+price: "650 €"
+order: 4
+images:
+  - https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+features:
+  - Paramétrage courbes de chauffe
+  - Configuration régulation
+  - Formation utilisateur
+  - Connexion application mobile

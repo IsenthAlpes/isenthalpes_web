@@ -38,8 +38,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: "Plombier Chauffagiste Grenoble | ISENTH'ALPES - Climatisation & Plomberie",
       meta: [
-        { name: 'description', content: "ISENTH'ALPES - Plombier chauffagiste à Grenoble dirigé par Samy Idelcadi. Expert en plomberie, chauffage, climatisation et pompe à chaleur haut de gamme. Installation, dépannage et maintenance en Isère. Devis gratuit." },
-        { name: 'keywords', content: 'plombier Grenoble, chauffagiste Grenoble, Samy Idelcadi, ISENTH ALPES, plomberie Grenoble, climatisation Grenoble, pompe à chaleur Grenoble, PAC Grenoble, chaudière gaz Grenoble, plancher chauffant Isère, dépannage chauffage Grenoble, installation climatisation Isère, plombier Échirolles, chauffagiste Meylan, plombier Saint-Martin-d-Hères, RGE Grenoble, QualiPAC Isère' },
+        { name: 'description', content: "ISENTH'ALPES - Plombier chauffagiste climaticien à Grenoble et agglomération. Samy Idelcadi, expert en plomberie, chauffage, climatisation, pompe à chaleur. Installation, dépannage urgent, remplacement chaudière, WC, chauffe-eau. Intervention Échirolles, Meylan, Voiron, Fontaine. Devis gratuit." },
+        { name: 'keywords', content: 'plombier Grenoble, chauffagiste Grenoble, climatisation Grenoble, Samy Idelcadi, ISENTH ALPES, isenthalpes, isenth-alpes, plomberie Grenoble, clim Grenoble, pompe à chaleur Grenoble, PAC Grenoble, chaudière gaz Grenoble, plancher chauffant Isère, dépannage chauffage Grenoble, installation climatisation Isère, plombier Échirolles, chauffagiste Meylan, plombier Saint-Martin-d-Hères, climaticien Grenoble, RGE Grenoble, QualiPAC Isère, remplacement WC Grenoble, fuite eau Grenoble, chauffe-eau Grenoble, ballon eau chaude Grenoble, rénovation salle de bain Grenoble, dépannage plomberie Grenoble, urgence plombier Grenoble, plombier Fontaine, chauffagiste Voiron, climatisation Échirolles, plombier Seyssinet, chauffagiste Saint-Égrève, plombier Vizille, climatisation Meylan, chauffagiste Crolles, plombier La Tronche, plombier Corenc, chauffagiste Eybens, plombier Gières, climatisation Sassenage, plombier Domène, chauffagiste Le Pont-de-Claix, plombier Claix, climatisation Seyssins, plombier Vif, chauffagiste Voreppe, plombier Moirans, climatisation Tullins, plombier Saint-Ismier, chauffagiste Bernin, plombier Villard-de-Lans, climatisation Chamrousse, plombier Uriage, chauffagiste Vienne, plombier Bourgoin-Jallieu, installation PAC Isère, entretien chaudière Grenoble, contrat maintenance chauffage' },
         { name: 'author', content: "Samy Idelcadi - ISENTH'ALPES" },
         { name: 'theme-color', content: '#c76d39' },
         { name: 'robots', content: 'index, follow' },
@@ -118,10 +118,33 @@ export default defineNuxtConfig({
               { "@type": "City", "name": "Voiron" },
               { "@type": "City", "name": "Vienne" },
               { "@type": "City", "name": "Bourgoin-Jallieu" },
+              { "@type": "City", "name": "La Tronche" },
+              { "@type": "City", "name": "Corenc" },
+              { "@type": "City", "name": "Eybens" },
+              { "@type": "City", "name": "Gières" },
+              { "@type": "City", "name": "Sassenage" },
+              { "@type": "City", "name": "Saint-Égrève" },
+              { "@type": "City", "name": "Le Pont-de-Claix" },
+              { "@type": "City", "name": "Claix" },
+              { "@type": "City", "name": "Seyssins" },
+              { "@type": "City", "name": "Domène" },
+              { "@type": "City", "name": "Vizille" },
+              { "@type": "City", "name": "Villard-de-Lans" },
+              { "@type": "City", "name": "Chamrousse" },
+              { "@type": "City", "name": "Crolles" },
+              { "@type": "City", "name": "Montbonnot-Saint-Martin" },
+              { "@type": "City", "name": "Varces-Allières-et-Risset" },
+              { "@type": "City", "name": "Tullins" },
+              { "@type": "City", "name": "Moirans" },
+              { "@type": "City", "name": "Voreppe" },
+              { "@type": "City", "name": "Saint-Ismier" },
+              { "@type": "City", "name": "Bernin" },
+              { "@type": "City", "name": "Vif" },
+              { "@type": "City", "name": "Uriage-les-Bains" },
               { "@type": "State", "name": "Isère" },
-              { "@type": "State", "name": "Rhône-Alpes" }
+              { "@type": "State", "name": "Auvergne-Rhône-Alpes" }
             ],
-            "serviceType": ["Plomberie", "Chauffage", "Climatisation", "Pompe à chaleur", "Chaudière gaz", "Plancher chauffant", "Dépannage plomberie", "Installation sanitaire"],
+            "serviceType": ["Plomberie", "Chauffage", "Climatisation", "Pompe à chaleur", "Chaudière gaz", "Plancher chauffant", "Dépannage plomberie", "Installation sanitaire", "Remplacement WC", "Remplacement chauffe-eau", "Réparation fuite eau", "Rénovation salle de bain", "Installation climatisation réversible", "Entretien chaudière", "Dépannage chauffage", "Installation ballon eau chaude", "Débouchage canalisation", "Recherche de fuite"],
             "priceRange": "€€€",
             "currenciesAccepted": "EUR",
             "paymentAccepted": "Cash, Credit Card, Bank Transfer",
@@ -133,32 +156,64 @@ export default defineNuxtConfig({
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Installation pompe à chaleur",
-                    "description": "Installation de pompes à chaleur air/eau et géothermiques"
+                    "name": "Installation pompe à chaleur Grenoble",
+                    "description": "Installation de pompes à chaleur air/eau et géothermiques à Grenoble et agglomération"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Installation climatisation",
-                    "description": "Climatisation réversible, gainable et multi-split"
+                    "name": "Installation climatisation Grenoble",
+                    "description": "Climatisation réversible, gainable et multi-split à Grenoble, Échirolles, Meylan"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Plomberie sanitaire",
-                    "description": "Création et rénovation de salles de bains"
+                    "name": "Plomberie sanitaire Grenoble",
+                    "description": "Création et rénovation de salles de bains, remplacement WC, robinetterie à Grenoble"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Contrat de maintenance",
-                    "description": "Entretien annuel et dépannage prioritaire"
+                    "name": "Dépannage plomberie urgent Grenoble",
+                    "description": "Intervention rapide fuite eau, débouchage, urgence plomberie Grenoble et Isère"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Remplacement chauffe-eau Grenoble",
+                    "description": "Installation et remplacement ballon eau chaude, chauffe-eau thermodynamique Grenoble"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Installation chaudière gaz Grenoble",
+                    "description": "Pose et remplacement chaudière gaz condensation à Grenoble et agglomération"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Entretien chauffage Grenoble",
+                    "description": "Contrat maintenance chaudière, entretien PAC, révision annuelle obligatoire"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Plancher chauffant Grenoble",
+                    "description": "Installation plancher chauffant hydraulique et électrique en Isère"
                   }
                 }
               ]
@@ -185,26 +240,38 @@ export default defineNuxtConfig({
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Plombier Chauffagiste",
+            "serviceType": ["Plombier", "Chauffagiste", "Climaticien"],
             "provider": {
               "@type": "LocalBusiness",
               "name": "ISENTH'ALPES",
+              "alternateName": ["Isenth Alpes", "Isenth-Alpes", "Isenthalpes"],
               "founder": {
                 "@type": "Person",
-                "name": "Samy Idelcadi"
+                "name": "Samy Idelcadi",
+                "alternateName": "Samy Idecadi"
               }
             },
             "areaServed": [
               { "@type": "City", "name": "Grenoble" },
               { "@type": "City", "name": "Échirolles" },
               { "@type": "City", "name": "Saint-Martin-d'Hères" },
+              { "@type": "City", "name": "Fontaine" },
+              { "@type": "City", "name": "Meylan" },
+              { "@type": "City", "name": "Voiron" },
+              { "@type": "City", "name": "Seyssinet-Pariset" },
+              { "@type": "City", "name": "Saint-Égrève" },
+              { "@type": "City", "name": "Le Pont-de-Claix" },
+              { "@type": "City", "name": "Vizille" },
+              { "@type": "City", "name": "Crolles" },
+              { "@type": "City", "name": "Vienne" },
+              { "@type": "City", "name": "Bourgoin-Jallieu" },
               { "@type": "State", "name": "Isère" }
             ],
-            "description": "Services de plomberie, chauffage et climatisation à Grenoble et en Isère. Installation, maintenance et dépannage par Samy Idelcadi et son équipe.",
+            "description": "ISENTH'ALPES - Plombier chauffagiste climaticien à Grenoble. Samy Idelcadi et son équipe interviennent pour installation, dépannage et maintenance : pompe à chaleur, climatisation, chaudière, plomberie, remplacement WC, fuite d'eau. Intervention rapide en Isère.",
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
-              "areaServed": "Grenoble et agglomération"
+              "areaServed": "Grenoble et 40km autour : Échirolles, Meylan, Fontaine, Voiron, Vizille, Crolles"
             }
           })
         },

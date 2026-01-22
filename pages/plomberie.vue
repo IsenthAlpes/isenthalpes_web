@@ -1,9 +1,43 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Plomberie Grenoble - Salle de bain Luxe | ISENTH\'ALPES',
-  description: 'Plomberie haut de gamme à Grenoble. Création de salles de bains luxe, robinetterie design, installations sanitaires premium. Devis gratuit.',
-  ogTitle: 'Plomberie Grenoble - ISENTH\'ALPES',
-  ogDescription: 'L\'art de la plomberie d\'exception. Salles de bains sur mesure et installations premium dans les Alpes.',
+  title: 'Plombier Grenoble | Dépannage, Rénovation Salle de Bain, Fuite Eau - ISENTH\'ALPES',
+  description: 'Plombier à Grenoble et agglomération : dépannage urgent, rénovation salle de bain, remplacement WC, chauffe-eau, fuite d\'eau. Intervention Échirolles, Meylan, Voiron, Fontaine, Vizille. Devis gratuit ISENTH\'ALPES.',
+  ogTitle: 'Plombier Grenoble - Dépannage & Rénovation | ISENTH\'ALPES',
+  ogDescription: 'Plombier expert à Grenoble : dépannage fuite, remplacement WC, chauffe-eau, rénovation salle de bain. Intervention rapide en Isère.',
+  ogType: 'website',
+  ogUrl: 'https://isenthalpes.com/plomberie',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Plombier Grenoble - ISENTH\'ALPES',
+  twitterDescription: 'Dépannage plomberie et rénovation salle de bain à Grenoble et 40km autour.',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://isenthalpes.com/plomberie' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Plombier",
+        "name": "Plombier Grenoble - ISENTH'ALPES",
+        "description": "Plombier à Grenoble : dépannage fuite eau, remplacement WC, chauffe-eau, débouchage, rénovation salle de bain. Intervention urgente en Isère.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "ISENTH'ALPES",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grenoble",
+            "addressRegion": "Isère",
+            "postalCode": "38000"
+          }
+        },
+        "areaServed": ["Grenoble", "Échirolles", "Meylan", "Fontaine", "Voiron", "Saint-Martin-d'Hères", "Vizille", "Vif", "Claix", "Seyssins"]
+      })
+    }
+  ]
 })
 
 interface Realisation {

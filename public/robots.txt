@@ -1,0 +1,21 @@
+# Robots.txt pour ISENTH'ALPES - Plombier Chauffagiste Grenoble
+# https://isenthalpes.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://isenthalpes.com/sitemap.xml
+
+# Pages principales
+Allow: /chauffage
+Allow: /climatisation
+Allow: /plomberie
+Allow: /service
+
+# Bloquer les ressources non pertinentes pour le SEO
+Disallow: /_nuxt/
+Disallow: /api/
+
+# Crawl-delay pour ne pas surcharger le serveur
+Crawl-delay: 1

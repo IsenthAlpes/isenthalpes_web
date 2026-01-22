@@ -1,9 +1,43 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Chauffage Grenoble - Installation PAC & Chaudière | ISENTH\'ALPES',
-  description: 'Installation et maintenance de systèmes de chauffage haut de gamme à Grenoble. Pompes à chaleur, chaudières gaz, planchers chauffants. Devis gratuit.',
-  ogTitle: 'Chauffage Grenoble - ISENTH\'ALPES',
-  ogDescription: 'Solutions de chauffage premium pour un confort optimal. PAC, chaudières, planchers chauffants dans les Alpes.',
+  title: 'Chauffagiste Grenoble | Installation PAC, Chaudière, Plancher Chauffant - ISENTH\'ALPES',
+  description: 'Chauffagiste à Grenoble et agglomération : installation pompe à chaleur (PAC air/eau), chaudière gaz condensation, plancher chauffant. Intervention Échirolles, Meylan, Voiron, Fontaine, Vizille. Dépannage chauffage urgent. Devis gratuit ISENTH\'ALPES.',
+  ogTitle: 'Chauffagiste Grenoble - Installation PAC & Chaudière | ISENTH\'ALPES',
+  ogDescription: 'Expert chauffage à Grenoble : pompe à chaleur, chaudière gaz, plancher chauffant. Installation et dépannage en Isère.',
+  ogType: 'website',
+  ogUrl: 'https://isenthalpes.com/chauffage',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Chauffagiste Grenoble - ISENTH\'ALPES',
+  twitterDescription: 'Installation PAC, chaudière, plancher chauffant à Grenoble et 40km autour.',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://isenthalpes.com/chauffage' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Chauffagiste",
+        "name": "Chauffagiste Grenoble - ISENTH'ALPES",
+        "description": "Installation et dépannage chauffage à Grenoble : pompe à chaleur, chaudière gaz, plancher chauffant. Intervention rapide en Isère.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "ISENTH'ALPES",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grenoble",
+            "addressRegion": "Isère",
+            "postalCode": "38000"
+          }
+        },
+        "areaServed": ["Grenoble", "Échirolles", "Meylan", "Fontaine", "Voiron", "Saint-Martin-d'Hères", "Vizille", "Crolles", "Saint-Égrève", "Le Pont-de-Claix"]
+      })
+    }
+  ]
 })
 
 interface Realisation {

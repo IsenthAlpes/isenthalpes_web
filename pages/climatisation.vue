@@ -1,9 +1,43 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Climatisation Grenoble - Installation & Maintenance | ISENTH\'ALPES',
-  description: 'Installation de climatisation haut de gamme à Grenoble et dans les Alpes. Systèmes réversibles, gainables, multi-split. Devis gratuit.',
-  ogTitle: 'Climatisation Grenoble - ISENTH\'ALPES',
-  ogDescription: 'Systèmes de climatisation haute performance pour votre confort. Installation et maintenance dans les Alpes.',
+  title: 'Climatisation Grenoble | Installation Clim Réversible, Gainable, Multi-Split - ISENTH\'ALPES',
+  description: 'Installation climatisation à Grenoble et agglomération : clim réversible, gainable, multi-split, VRV. Climaticien Échirolles, Meylan, Voiron, Fontaine. Entretien et dépannage clim urgent. Devis gratuit ISENTH\'ALPES.',
+  ogTitle: 'Climatisation Grenoble - Installation & Entretien Clim | ISENTH\'ALPES',
+  ogDescription: 'Climaticien à Grenoble : installation clim réversible, gainable, multi-split. Dépannage et entretien en Isère.',
+  ogType: 'website',
+  ogUrl: 'https://isenthalpes.com/climatisation',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Climatisation Grenoble - ISENTH\'ALPES',
+  twitterDescription: 'Installation et entretien climatisation à Grenoble et 40km autour. Clim réversible, gainable.',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://isenthalpes.com/climatisation' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Climaticien",
+        "name": "Climatisation Grenoble - ISENTH'ALPES",
+        "description": "Installation et entretien climatisation à Grenoble : clim réversible, gainable, multi-split, VRV. Dépannage rapide en Isère.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "ISENTH'ALPES",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grenoble",
+            "addressRegion": "Isère",
+            "postalCode": "38000"
+          }
+        },
+        "areaServed": ["Grenoble", "Échirolles", "Meylan", "Fontaine", "Voiron", "Saint-Martin-d'Hères", "Sassenage", "Seyssinet-Pariset", "Corenc", "La Tronche"]
+      })
+    }
+  ]
 })
 
 interface Realisation {

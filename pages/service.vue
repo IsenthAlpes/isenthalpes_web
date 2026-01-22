@@ -1,9 +1,43 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Service & Maintenance Grenoble - Contrats Entretien | ISENTH\'ALPES',
-  description: 'Service et maintenance de vos installations à Grenoble. Contrats d\'entretien, dépannage urgent 7j/7, diagnostic. Devis gratuit.',
-  ogTitle: 'Service & Maintenance Grenoble - ISENTH\'ALPES',
-  ogDescription: 'Accompagnement et maintenance de vos installations tout au long de l\'année dans les Alpes.',
+  title: 'Entretien Chaudière & Dépannage Chauffage Grenoble | Contrat Maintenance - ISENTH\'ALPES',
+  description: 'Entretien chaudière et dépannage chauffage à Grenoble : contrat maintenance PAC, chaudière gaz, climatisation. Intervention urgente 7j/7 Échirolles, Meylan, Voiron, Fontaine. Diagnostic gratuit ISENTH\'ALPES.',
+  ogTitle: 'Entretien & Dépannage Chauffage Grenoble | ISENTH\'ALPES',
+  ogDescription: 'Contrat entretien chaudière, PAC, climatisation à Grenoble. Dépannage urgent 7j/7 en Isère.',
+  ogType: 'website',
+  ogUrl: 'https://isenthalpes.com/service',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Entretien Chaudière Grenoble - ISENTH\'ALPES',
+  twitterDescription: 'Contrat maintenance et dépannage chauffage à Grenoble et 40km autour.',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://isenthalpes.com/service' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Maintenance chauffage",
+        "name": "Entretien & Dépannage Chauffage Grenoble - ISENTH'ALPES",
+        "description": "Contrat entretien chaudière gaz, PAC, climatisation à Grenoble. Dépannage urgent 7j/7, diagnostic, mise en service. Intervention rapide en Isère.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "ISENTH'ALPES",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grenoble",
+            "addressRegion": "Isère",
+            "postalCode": "38000"
+          }
+        },
+        "areaServed": ["Grenoble", "Échirolles", "Meylan", "Fontaine", "Voiron", "Saint-Martin-d'Hères", "Crolles", "Voreppe", "Moirans", "Tullins"]
+      })
+    }
+  ]
 })
 
 interface Realisation {

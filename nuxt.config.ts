@@ -36,11 +36,11 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'fr' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: "Plombier Chauffagiste Grenoble | ISENTH'ALPES - Climatisation & Plomberie",
+      title: "Plombier Chauffagiste Grenoble | Isenth'Alpes - Climatisation & Plomberie",
       meta: [
-        { name: 'description', content: "ISENTH'ALPES - Plombier chauffagiste climaticien à Grenoble et agglomération. Samy Idelcadi, expert en plomberie, chauffage, climatisation, pompe à chaleur. Installation, dépannage urgent, remplacement chaudière, WC, chauffe-eau. Intervention Échirolles, Meylan, Voiron, Fontaine. Devis gratuit." },
+        { name: 'description', content: "Isenth'Alpes - Plombier chauffagiste climaticien à Grenoble et agglomération. Samy Idelcadi, expert en plomberie, chauffage, climatisation, pompe à chaleur. Installation, dépannage urgent, remplacement chaudière, WC, chauffe-eau. Intervention Échirolles, Meylan, Voiron, Fontaine. Devis gratuit." },
         { name: 'keywords', content: 'plombier Grenoble, chauffagiste Grenoble, climatisation Grenoble, Samy Idelcadi, ISENTH ALPES, isenthalpes, isenth-alpes, plomberie Grenoble, clim Grenoble, pompe à chaleur Grenoble, PAC Grenoble, chaudière gaz Grenoble, plancher chauffant Isère, dépannage chauffage Grenoble, installation climatisation Isère, plombier Échirolles, chauffagiste Meylan, plombier Saint-Martin-d-Hères, climaticien Grenoble, RGE Grenoble, QualiPAC Isère, remplacement WC Grenoble, fuite eau Grenoble, chauffe-eau Grenoble, ballon eau chaude Grenoble, rénovation salle de bain Grenoble, dépannage plomberie Grenoble, urgence plombier Grenoble, plombier Fontaine, chauffagiste Voiron, climatisation Échirolles, plombier Seyssinet, chauffagiste Saint-Égrève, plombier Vizille, climatisation Meylan, chauffagiste Crolles, plombier La Tronche, plombier Corenc, chauffagiste Eybens, plombier Gières, climatisation Sassenage, plombier Domène, chauffagiste Le Pont-de-Claix, plombier Claix, climatisation Seyssins, plombier Vif, chauffagiste Voreppe, plombier Moirans, climatisation Tullins, plombier Saint-Ismier, chauffagiste Bernin, plombier Villard-de-Lans, climatisation Chamrousse, plombier Uriage, chauffagiste Vienne, plombier Bourgoin-Jallieu, installation PAC Isère, entretien chaudière Grenoble, contrat maintenance chauffage' },
-        { name: 'author', content: "Samy Idelcadi - ISENTH'ALPES" },
+        { name: 'author', content: "Samy Idelcadi - Isenth'Alpes" },
         { name: 'theme-color', content: '#c76d39' },
         { name: 'robots', content: 'index, follow' },
         // Geo tags
@@ -51,20 +51,20 @@ export default defineNuxtConfig({
         // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://isenthalpes.com/' },
-        { property: 'og:title', content: "Plombier Chauffagiste Grenoble | ISENTH'ALPES - Climatisation & Plomberie" },
+        { property: 'og:title', content: "Plombier Chauffagiste Grenoble | Isenth'Alpes - Climatisation & Plomberie" },
         { property: 'og:description', content: "Votre plombier chauffagiste à Grenoble. Expert en plomberie, chauffage et climatisation haut de gamme. Certifié RGE. Devis gratuit." },
         { property: 'og:image', content: 'https://isenthalpes.com/og-image.jpg' },
         { property: 'og:locale', content: 'fr_FR' },
-        { property: 'og:site_name', content: "ISENTH'ALPES" },
+        { property: 'og:site_name', content: "Isenth'Alpes" },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:url', content: 'https://isenthalpes.com/' },
-        { name: 'twitter:title', content: "Plombier Chauffagiste Grenoble | ISENTH'ALPES" },
+        { name: 'twitter:title', content: "Plombier Chauffagiste Grenoble | Isenth'Alpes" },
         { name: 'twitter:description', content: "Votre plombier chauffagiste à Grenoble. Expert en plomberie, chauffage et climatisation haut de gamme. Certifié RGE." },
         { name: 'twitter:image', content: 'https://isenthalpes.com/og-image.jpg' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/logo-seul.svg' },
         { rel: 'canonical', href: 'https://isenthalpes.com/' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
@@ -77,14 +77,14 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "@id": "https://isenthalpes.com",
-            "name": "ISENTH'ALPES",
+            "name": "Isenth'Alpes",
             "alternateName": "Isenth'Alpes Plomberie Chauffage",
             "description": "Plombier chauffagiste à Grenoble. Expert en plomberie, chauffage, climatisation et pompe à chaleur. Installation, dépannage et maintenance.",
             "url": "https://isenthalpes.com",
-            "logo": "https://isenthalpes.com/logo.svg",
+            "logo": "https://isenthalpes.com/logo-seul.svg",
             "image": "https://isenthalpes.com/og-image.jpg",
             "telephone": "+33400000000",
-            "email": "contact@isenthalpes.fr",
+            "email": "contact@isenthalpes.com",
             "founder": {
               "@type": "Person",
               "name": "Samy Idelcadi",
@@ -150,7 +150,7 @@ export default defineNuxtConfig({
             "paymentAccepted": "Cash, Credit Card, Bank Transfer",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Services ISENTH'ALPES",
+              "name": "Services Isenth'Alpes",
               "itemListElement": [
                 {
                   "@type": "Offer",
@@ -243,7 +243,7 @@ export default defineNuxtConfig({
             "serviceType": ["Plombier", "Chauffagiste", "Climaticien"],
             "provider": {
               "@type": "LocalBusiness",
-              "name": "ISENTH'ALPES",
+              "name": "Isenth'Alpes",
               "alternateName": ["Isenth Alpes", "Isenth-Alpes", "Isenthalpes"],
               "founder": {
                 "@type": "Person",
@@ -267,7 +267,7 @@ export default defineNuxtConfig({
               { "@type": "City", "name": "Bourgoin-Jallieu" },
               { "@type": "State", "name": "Isère" }
             ],
-            "description": "ISENTH'ALPES - Plombier chauffagiste climaticien à Grenoble. Samy Idelcadi et son équipe interviennent pour installation, dépannage et maintenance : pompe à chaleur, climatisation, chaudière, plomberie, remplacement WC, fuite d'eau. Intervention rapide en Isère.",
+            "description": "Isenth'Alpes - Plombier chauffagiste climaticien à Grenoble. Samy Idelcadi et son équipe interviennent pour installation, dépannage et maintenance : pompe à chaleur, climatisation, chaudière, plomberie, remplacement WC, fuite d'eau. Intervention rapide en Isère.",
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
@@ -280,12 +280,12 @@ export default defineNuxtConfig({
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "ISENTH'ALPES",
+            "name": "Isenth'Alpes",
             "url": "https://isenthalpes.com",
-            "description": "Site officiel d'ISENTH'ALPES - Plombier chauffagiste à Grenoble",
+            "description": "Site officiel d'Isenth'Alpes - Plombier chauffagiste à Grenoble",
             "publisher": {
               "@type": "Organization",
-              "name": "ISENTH'ALPES",
+              "name": "Isenth'Alpes",
               "founder": {
                 "@type": "Person",
                 "name": "Samy Idelcadi"

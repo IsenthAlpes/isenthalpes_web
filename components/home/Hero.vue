@@ -1,10 +1,11 @@
 <script setup lang="ts">
+
 const expertises = [
   {
     id: 1,
     icon: 'heating',
     title: 'Chauffage',
-    description: 'Solutions de chauffage premium pour un confort optimal',
+    description: 'Solutions de chauffage pour un confort optimal',
     link: '/chauffage'
   },
   {
@@ -18,14 +19,14 @@ const expertises = [
     id: 3,
     icon: 'plumbing',
     title: 'Plomberie',
-    description: 'Installations sanitaires de qualité supérieure',
+    description: 'Installations sanitaires',
     link: '/plomberie'
   },
   {
     id: 4,
     icon: 'service',
     title: 'Service',
-    description: 'Maintenance et dépannage réactif 7j/7',
+    description: 'Maintenance et dépannage',
     link: '/service'
   }
 ]
@@ -36,11 +37,10 @@ const expertises = [
     <div class="hero-background"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2 class="hero-title">Excellence & Savoir-Faire</h2>
+      <h2 class="hero-title">Isenth'Alpes</h2>
       <p class="hero-subtitle">
-        Spécialiste du confort thermique haut de gamme dans les Alpes
+        La maîtrise des fluides, le confort au sommet
       </p>
-
       <div id="expertises" class="expertise-cards">
         <NuxtLink
           v-for="(expertise, index) in expertises"
@@ -51,21 +51,13 @@ const expertises = [
         >
           <div class="card-icon">
             <!-- Heating Icon -->
-            <svg v-if="expertise.icon === 'heating'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-              <path d="M12 2v2m0 16v2M4 12H2m20 0h-2m-2.93-6.36l-1.41 1.41m-9.32 9.32l-1.41 1.41m0-12.14l1.41 1.41m9.32 9.32l1.41 1.41M12 6a6 6 0 100 12 6 6 0 000-12z"/>
-            </svg>
+            <img v-if="expertise.icon === 'heating'"src="/pictures/icon/icon-heating.svg" width="80%"  height="auto"/>
             <!-- Cooling Icon -->
-            <svg v-if="expertise.icon === 'cooling'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-              <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07M12 6l-2 2 2 2 2-2-2-2zM6 12l2-2-2-2-2 2 2 2zM18 12l-2 2 2 2 2-2-2-2zM12 18l2-2-2-2-2 2 2 2z"/>
-            </svg>
+            <img v-if="expertise.icon === 'cooling'" src="/pictures/icon/icon-cooling.svg" width="70%"  height="auto"/>
             <!-- Plumbing Icon -->
-            <svg v-if="expertise.icon === 'plumbing'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-              <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM17 14v3a4 4 0 01-4 4h-2M7 10v4M17 10v4"/>
-            </svg>
+            <img v-if="expertise.icon === 'plumbing'" src="/pictures/icon/icon-plumbing.svg" width="60%"  height="auto"/>
             <!-- Service Icon -->
-            <svg v-if="expertise.icon === 'service'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-            </svg>
+            <img v-if="expertise.icon === 'service'" src="/pictures/icon/icon-service.svg" width="60%"  height="auto"/>
           </div>
           <h3>{{ expertise.title }}</h3>
           <p>{{ expertise.description }}</p>
@@ -84,6 +76,9 @@ const expertises = [
           <path d="M7 17l9.2-9.2M17 17V7H7"/>
         </svg>
       </a>
+      <div class="hero-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.8268632440117!2d5.698957276595767!3d45.21083895030732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af393ae45a637%3A0x1d7a1b7ad7ba0c6f!2s2%20Rue%20Rosa%20Lee%20Parks%2C%2038950%20Saint-Martin-le-Vinoux!5e0!3m2!1sfr!2sfr!4v1769610852624!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 </template>
@@ -105,8 +100,9 @@ const expertises = [
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  /*background:
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); */
+  background-image: url('/pictures/fond-image.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -132,7 +128,9 @@ const expertises = [
   text-align: center;
   max-width: 1200px;
   width: 100%;
+  padding: 1rem;
 }
+
 
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -249,6 +247,7 @@ const expertises = [
   font-weight: 600;
   transition: all 0.3s ease;
   animation: fadeInUp 0.8s ease-out 0.6s both;
+  
 }
 
 .cta-button:hover {

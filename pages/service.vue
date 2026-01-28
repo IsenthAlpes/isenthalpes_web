@@ -22,11 +22,11 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Maintenance chauffage",
-        "name": "Entretien & Dépannage Chauffage Grenoble - ISENTH'ALPES",
+        "name": "Entretien & Dépannage Chauffage Grenoble - Isenth'Alpes",
         "description": "Contrat entretien chaudière gaz, PAC, climatisation à Grenoble. Dépannage urgent 7j/7, diagnostic, mise en service. Intervention rapide en Isère.",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "ISENTH'ALPES",
+          "name": "Isenth'Alpes",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Grenoble",

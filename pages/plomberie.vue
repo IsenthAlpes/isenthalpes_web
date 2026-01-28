@@ -22,11 +22,11 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Plombier",
-        "name": "Plombier Grenoble - ISENTH'ALPES",
+        "name": "Plombier Grenoble - Isenth'Alpes",
         "description": "Plombier à Grenoble : dépannage fuite eau, remplacement WC, chauffe-eau, débouchage, rénovation salle de bain. Intervention urgente en Isère.",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "ISENTH'ALPES",
+          "name": "Isenth'Alpes",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Grenoble",

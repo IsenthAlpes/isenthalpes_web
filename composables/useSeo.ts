@@ -23,7 +23,7 @@ export const useSeo = (config: SeoConfig) => {
     ogUrl: fullUrl,
     ogType: config.type || 'website',
     ogLocale: 'fr_FR',
-    ogSiteName: "ISENTH'ALPES",
+    ogSiteName: "Isenth'Alpes",
     twitterCard: 'summary_large_image',
     twitterTitle: config.title,
     twitterDescription: config.description,
@@ -37,8 +37,9 @@ export const useSeo = (config: SeoConfig) => {
     meta: [
       { name: 'geo.region', content: 'FR-ARA' },
       { name: 'geo.placename', content: 'Grenoble' },
-      { name: 'geo.position', content: '45.188529;5.724524' },
-      { name: 'ICBM', content: '45.188529, 5.724524' }
+      { name: 'geo.position', content: '45.21083791959252;5.701528391045427' },
+      { name: 'ICBM', content: '45.21083791959252;5.701528391045427' }
+
     ]
   })
 }
@@ -51,12 +52,12 @@ export const useLocalBusinessSchema = () => {
         innerHTML: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
-          '@id': 'https://isentalpes.fr/#business',
-          name: "ISENTH'ALPES",
-          description: 'Expert plombier chauffagiste à Grenoble et dans les Alpes. Installation et maintenance de chauffage, climatisation, plomberie haut de gamme.',
-          url: 'https://isentalpes.fr',
+          '@id': 'https://isentalpes.com/#business',
+          name: "Isenth'Alpes",
+          description: 'Plombier Chauffagiste et Climaticien à Grenoble et dans les Alpes. Installation et maintenance de chauffage, climatisation, plomberie pour un service sur mesure.',
+          url: 'https://isentalpes.com',
           telephone: '+33 4 XX XX XX XX',
-          email: 'contact@isentalpes.fr',
+          email: 'contact@isentalpes.com',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Grenoble',

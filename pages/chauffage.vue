@@ -22,11 +22,11 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Chauffagiste",
-        "name": "Chauffagiste Grenoble - ISENTH'ALPES",
+        "name": "Chauffagiste Grenoble - Isenth'Alpes",
         "description": "Installation et dépannage chauffage à Grenoble : pompe à chaleur, chaudière gaz, plancher chauffant. Intervention rapide en Isère.",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "ISENTH'ALPES",
+          "name": "Isenth'Alpes",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Grenoble",
@@ -168,6 +168,7 @@ const ctaConfig = {
   text-align: center;
   color: white;
   max-width: 800px;
+  
 }
 
 .back-link {

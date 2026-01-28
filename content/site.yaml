@@ -1,10 +1,10 @@
-name: "ISENTH'ALPES"
+name: "Isenth'Alpes"
 tagline: Votre partenaire de confiance pour tous vos projets de confort thermique haut de gamme dans les Alpes
 phone: "04 XX XX XX XX"
-email: contact@isenthalpes.fr
+email: contact@isenthalpes.com
 address:
-  city: Grenoble
-  postalCode: "38000"
+  city: Saint-Martin-le-Vinoux
+  postalCode: "38950"
   region: Isère
   country: FR
 geo:
@@ -16,8 +16,8 @@ social:
   linkedin: "#"
   instagram: "#"
 seo:
-  defaultTitle: "Plombier Chauffagiste Grenoble | ISENTH'ALPES - Climatisation & Plomberie"
-  defaultDescription: "ISENTH'ALPES - Plombier chauffagiste à Grenoble. Expert en plomberie, chauffage et climatisation haut de gamme. Installation, dépannage et maintenance. Devis gratuit."
+  defaultTitle: "Plombier Chauffagiste Grenoble | Isenth'Alpes - Climatisation & Plomberie"
+  defaultDescription: "Isenth'Alpes - Plombier chauffagiste à Grenoble. Expert en plomberie, chauffage et climatisation. Installation, dépannage et maintenance. Devis gratuit."
   keywords:
     - plombier Grenoble
     - chauffagiste Grenoble

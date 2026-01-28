@@ -22,11 +22,11 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Climaticien",
-        "name": "Climatisation Grenoble - ISENTH'ALPES",
+        "name": "Climatisation Grenoble - Isenth'Alpes",
         "description": "Installation et entretien climatisation à Grenoble : clim réversible, gainable, multi-split, VRV. Dépannage rapide en Isère.",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "ISENTH'ALPES",
+          "name": "Isenth'Alpes",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Grenoble",

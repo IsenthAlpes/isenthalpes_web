@@ -8,12 +8,11 @@ const currentYear = new Date().getFullYear()
       <div class="footer-main">
         <div class="footer-brand">
           <div class="brand-logo">
-            <img src="/logo.svg" alt="ISENTH'ALPES" class="footer-logo" />
-            <h3>ISENTH'ALPES</h3>
+            <img src="/logo-seul.svg" alt="Isenth'Alpes" class="footer-logo" />
+            <h3>Isenth'Alpes</h3>
           </div>
           <p class="brand-tagline">
-            Votre partenaire de confiance pour tous vos projets de confort thermique
-            haut de gamme dans les Alpes.
+            Votre partenaire de confiance pour tous vos projets de confort thermique et sanitaire dans les Alpes.
           </p>
           <div class="social-links">
             <a href="#" aria-label="Facebook">
@@ -67,7 +66,7 @@ const currentYear = new Date().getFullYear()
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span>Zone Alpes - Rhône-Alpes</span>
+                <span>Saint-Martin-le-Vinoux - Région Grenobloise</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -80,7 +79,7 @@ const currentYear = new Date().getFullYear()
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
-                <span>contact@isentalpes.fr</span>
+                <span>contact@isentalpes.com</span>
               </li>
             </ul>
           </div>
@@ -88,7 +87,7 @@ const currentYear = new Date().getFullYear()
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} ISENTH'ALPES - Tous droits réservés</p>
+        <p>&copy; {{ currentYear }} Isenth'Alpes - Tous droits réservés</p>
         <div class="legal-links">
           <a href="#">Mentions légales</a>
           <a href="#">Politique de confidentialité</a>

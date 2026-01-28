@@ -5,10 +5,11 @@ const services = [
     icon: 'heating',
     title: 'Chauffage',
     intro: "L'excellence thermique pour votre habitat",
-    description: "Nous concevons et installons des systèmes de chauffage haut de gamme adaptés à vos besoins. Pompes à chaleur dernière génération, chaudières à condensation premium, planchers chauffants basse température : nos solutions allient performance énergétique et confort absolu.",
-    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    description: "Des systèmes de chauffage haut de gamme adaptés à vos besoins. Pompes à chaleur dernière génération, chaudières à condensation premium, planchers chauffants basse température : nos solutions allient performance énergétique et confort absolu.",
+    image: '/pictures/service/heating-service.png',
     features: [
       'Pompes à chaleur air/eau et géothermie',
+      'Pompe à chaleur Hybride',
       'Chaudières gaz à condensation haute efficacité',
       'Planchers chauffants hydrauliques',
       'Radiateurs design et connectés'
@@ -19,13 +20,14 @@ const services = [
     icon: 'cooling',
     title: 'Climatisation',
     intro: 'La fraîcheur maîtrisée avec élégance',
-    description: "Nos systèmes de climatisation haut de gamme vous garantissent une température idéale en toute saison. Silencieux, économes et esthétiques, ils s'intègrent parfaitement à votre intérieur tout en respectant l'environnement.",
-    image: 'https://images.unsplash.com/photo-1631545806609-4d567fa0e41c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    description: "Des systèmes de climatisation haut de gamme vous garantissent une température idéale en toute saison. Silencieux, économes et esthétiques, ils s'intègrent parfaitement à votre intérieur tout en respectant l'environnement.",
+    image: '/pictures/service/cooling-service.png',
     features: [
       'Climatisation réversible gainable',
       'Systèmes multi-split design',
       'VRV/VRF pour grands espaces',
-      'Régulation intelligente et domotique'
+      'Régulation intelligente',
+      'Plancher Rafraîchissant'
     ],
     reverse: true
   },
@@ -33,12 +35,12 @@ const services = [
     id: 'plomberie',
     icon: 'plumbing',
     title: 'Plomberie',
-    intro: "L'art de la plomberie d'exception",
-    description: "De la conception à la réalisation, nous créons des espaces sanitaires d'exception. Salles de bains sur mesure, robinetterie design, installations techniques invisibles : chaque détail est pensé pour allier fonctionnalité et esthétique.",
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    intro: "L'art de la plomberie",
+    description: "De la conception à la réalisation, nous vous accompagnons pour créer des espaces sanitaires d'exception.",
+    image: '/pictures/service/plumbing-service.png',
     features: [
-      'Création de salles de bains luxe',
-      'Robinetterie haut de gamme',
+      'Création de salles de bains',
+      "Génération d'eau chaude sanitaire",
       "Adoucisseurs et filtration d'eau",
       'Réseaux encastrés et gainés'
     ]
@@ -49,7 +51,7 @@ const services = [
     title: 'Service & Maintenance',
     intro: "L'engagement d'un accompagnement sans faille",
     description: "Notre équipe de techniciens experts assure le bon fonctionnement de vos installations tout au long de l'année. Contrats d'entretien personnalisés, interventions rapides, assistance téléphonique : nous sommes à vos côtés à chaque instant.",
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/pictures/service/service-service.jpg',
     features: [
       'Contrats de maintenance premium',
       'Dépannage urgent 7j/7',
@@ -68,8 +70,14 @@ const services = [
         <span class="section-label">Nos Expertises</span>
         <h2 class="section-title">Des solutions sur mesure pour votre confort</h2>
         <p class="section-description">
-          Découvrez notre gamme complète de services premium, conçus pour répondre
-          aux exigences les plus élevées en matière de confort thermique.
+            Vous cherchez un partenaire de confiance pour vos travaux de plomberie, chauffage ou climatisation dans 
+            l'agglomération grenobloise ? Chez Isenth'Alpes, nous croyons que le travail bien fait commence par une 
+            l'écoute et l'expertise de vos besoins. Installé à Saint-Martin-le-Vinoux, nous intervenons rapidement dans l'agglomération Grenoble, sur un rayon de 40 km : Échirolles, Meylan, Fontaine, Voiron, Saint-Martin-d'Hères, Vizille, Crolles... 
+            Mon parcours, débuté par l'apprentissage du geste (CAP, Bac Pro) et abouti par un diplôme d'Ingénieur, 
+            est la garantie d'un diagnostic précis et d'une installation durable. 
+            De la simple fuite d'eau à l'installation complète de votre système de chauffage, 
+            bénéficiez d'un savoir-faire local, pointu et à l'écoute de vos besoins.
+
         </p>
       </div>
 
@@ -86,21 +94,13 @@ const services = [
         <div class="service-content">
           <div class="service-icon" :class="service.icon">
             <!-- Heating Icon -->
-            <svg v-if="service.icon === 'heating'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
-              <path d="M12 2v2m0 16v2M4 12H2m20 0h-2m-2.93-6.36l-1.41 1.41m-9.32 9.32l-1.41 1.41m0-12.14l1.41 1.41m9.32 9.32l1.41 1.41M12 6a6 6 0 100 12 6 6 0 000-12z"/>
-            </svg>
+            <img v-if="service.icon === 'heating'"src="/pictures/icon/icon-heating.svg" width="80%"  height="auto"/>
             <!-- Cooling Icon -->
-            <svg v-if="service.icon === 'cooling'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
-              <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
-            </svg>
+            <img v-if="service.icon === 'cooling'"src="/pictures/icon/icon-cooling.svg" width="70%"  height="auto"/>
             <!-- Plumbing Icon -->
-            <svg v-if="service.icon === 'plumbing'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
-              <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM17 14v3a4 4 0 01-4 4h-2M7 10v4M17 10v4"/>
-            </svg>
+            <img v-if="service.icon === 'plumbing'"src="/pictures/icon/icon-plumbing.svg" width="70%"  height="auto"/>
             <!-- Service Icon -->
-            <svg v-if="service.icon === 'service'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
-              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-            </svg>
+            <img v-if="service.icon === 'service'"src="/pictures/icon/icon-service.svg" width="60%"  height="auto"/>
           </div>
           <h3>{{ service.title }}</h3>
           <p class="service-intro">{{ service.intro }}</p>
@@ -158,9 +158,10 @@ const services = [
 .section-description {
   font-size: 1.15rem;
   color: var(--text-light);
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
   line-height: 1.8;
+  text-align: center;
 }
 
 .service-block {

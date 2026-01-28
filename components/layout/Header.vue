@@ -25,8 +25,8 @@ watch(route, () => {
   <header class="header">
     <div class="header-container">
       <NuxtLink to="/" class="logo-section" @click="closeMenu">
-        <img src="/logo.svg" alt="ISENTH'ALPES Logo" class="logo" />
-        <h1 class="company-name">ISENTH'ALPES</h1>
+        <img src="/logo-seul.svg" alt="Isenth'Alpes Logo" class="logo" />
+        <h1 class="company-name">Isenth'Alpes</h1>
       </NuxtLink>
       <nav class="navigation" :class="{ open: menuOpen }">
         <ul>

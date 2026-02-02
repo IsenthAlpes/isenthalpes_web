@@ -23,6 +23,7 @@ watch(route, () => {
 
 <template>
   <header class="header">
+    <SharedAnnouncementPopup />
     <div class="header-container">
       <NuxtLink to="/" class="logo-section" @click="closeMenu">
         <img src="/logo-seul.svg" alt="Isenth'Alpes Logo" class="logo" />

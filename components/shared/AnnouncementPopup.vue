@@ -29,9 +29,9 @@ const handleKeydown = (event: KeyboardEvent) => {
 }
 
 // Afficher le popup à chaque changement de route
-watch(() => route.fullPath, () => {
-  showPopup()
-})
+//watch(() => route.fullPath, () => {
+//  showPopup()
+//})
 
 onMounted(() => {
   if (import.meta.client) {

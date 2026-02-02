@@ -8,7 +8,7 @@
       <slot />
     </main>
     <LayoutFooter />
-    <SharedAnnouncementPopup />
+    <!--<SharedAnnouncementPopup />-->
   </div>
 </template>
 

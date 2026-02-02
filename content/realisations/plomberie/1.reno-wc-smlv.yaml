@@ -5,9 +5,9 @@ duration: 1 semaines
 price: "2 000 €"
 order: 1
 images:
-  - pictures/realisations/plomberie/WC-smlv-1.jpg
-  - pictures/realisations/plomberie/WC-smlv-2.jpg
-  - pictures/realisations/plomberie/WC-smlv-final.png
+  - https://isenthalpes.com/pictures/realisations/plomberie/WC-smlv-1.jpg
+  - https://isenthalpes.com/pictures/realisations/plomberie/WC-smlv-2.jpg
+  - https://isenthalpes.com/pictures/realisations/plomberie/WC-smlv-final.PNG
 features:
   - Bâti Grohe Rapid SL pour WC
   - Villeroy & Boch Universal Mitigeur de lavabo avec AquaSmart, noir mat

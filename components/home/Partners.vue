@@ -9,7 +9,7 @@ interface Partner {
 interface Qualification {
   id: number
   name: string
-  shortName: string
+  icon: string 
   description: string
   bgColor: string
   textColor: string
@@ -67,9 +67,9 @@ const qualifications = computed<Qualification[]>(() => qualificationsData.value?
             class="qualification-card"
           >
             <div class="qualification-logo" :style="{ background: qualification.bgColor }">
-              <span class="qualification-text" :style="{ color: qualification.textColor }">
-                {{ qualification.shortName }}
-              </span>
+              <img class="qualification-icon" :style="{ color: qualification.textColor }" :src="qualification.icon" width="150%"  height="auto">
+                
+              </img>
             </div>
             <h4>{{ qualification.name }}</h4>
             <p>{{ qualification.description }}</p>
@@ -249,7 +249,7 @@ const qualifications = computed<Qualification[]>(() => qualificationsData.value?
 .qualification-logo {
   width: 70px;
   height: 70px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -261,10 +261,13 @@ const qualifications = computed<Qualification[]>(() => qualificationsData.value?
   transform: scale(1.1);
 }
 
-.qualification-text {
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+.qualification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px; /* Ajustez selon votre design */
+  height: 65px;
+  border-radius: 50%; /* Si vous voulez un rond */
 }
 
 .qualification-card h4 {

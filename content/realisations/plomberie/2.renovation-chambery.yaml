@@ -1,17 +1,18 @@
-title: Rénovation complète - Appartement Chambéry
-description: "Réfection totale de la plomberie d'un appartement ancien avec mise aux normes et création de 2 salles d'eau."
-type: Rénovation
-duration: 3 semaines
-price: "28 500 €"
+title: Rénovation salle de bain - Appartement Grenoble
+description: "Réfection totale de la salle de bain d'un appartement"
+type: Rénovation salle de bain
+duration: 2 semaines
+price: "4 000 €"
 order: 2
 images:
-  - https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
-  - https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
-  - https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
-  - https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
-  - https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  - pictures/realisations/plomberie/sdb Alexis 1.jpg
+  - pictures/realisations/plomberie/sdb Alexis 2.jpg
+  - pictures/realisations/plomberie/sdb Alexis 3.jpeg
+  - pictures/realisations/plomberie/sdb Alexis final.jpeg
 features:
-  - Remplacement réseaux complets
-  - "2 salles d'eau créées"
+  - Remplacement réseaux évacuation PVC
+  - Reprise réseau cuivre existant
+  - Pose receveur de douche extraplat en résine
   - Robinetterie Hansgrohe
-  - Chauffe-eau thermodynamique
+  - Pose paroi de douche
+

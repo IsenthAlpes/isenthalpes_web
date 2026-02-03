@@ -10,7 +10,11 @@ const envoyerMail = () => {
 };
 
 const props = defineProps({
-  phone: { type: String, required: true }, // Format: "+33612345678"
+  phone: { 
+    type: String, 
+    required: false, // On passe en false car on met une valeur par défaut
+    default: '+33760446116' // VOTRE NUMÉRO ICI
+  }, 
   label: { type: String, default: '' }
 });
 

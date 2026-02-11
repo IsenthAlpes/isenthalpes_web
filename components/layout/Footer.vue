@@ -77,7 +77,7 @@ const passerAppel = () => {
               <li><NuxtLink to="/">À propos</NuxtLink></li>
               <li><NuxtLink to="/#partenaires">Partenaires</NuxtLink></li>
               <li><a href="#">Réalisations</a></li>
-              <li><a href="#">Recrutement</a></li>
+              <!-- <li><a href="#">Recrutement</a></li> -->
             </ul>
           </div>
 
@@ -112,8 +112,7 @@ const passerAppel = () => {
       <div class="footer-bottom">
         <p>&copy; {{ currentYear }} Isenth'Alpes - Tous droits réservés</p>
         <div class="legal-links">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
+          <a href="/Mentions legales isenthalpes.pdf" download="Mentions legales isenthalpes.pdf">Mentions légales</a>
           <a href="#">CGV</a>
         </div>
       </div>

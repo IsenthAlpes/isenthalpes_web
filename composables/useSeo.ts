@@ -56,7 +56,7 @@ export const useLocalBusinessSchema = () => {
           name: "Isenth'Alpes",
           description: 'Plombier Chauffagiste et Climaticien à Grenoble et dans les Alpes. Installation et maintenance de chauffage, climatisation, plomberie pour un service sur mesure.',
           url: 'https://isentalpes.com',
-          telephone: '+33 4 XX XX XX XX',
+          telephone: '+33 7 60 44 61 16',
           email: 'contact@isentalpes.com',
           address: {
             '@type': 'PostalAddress',

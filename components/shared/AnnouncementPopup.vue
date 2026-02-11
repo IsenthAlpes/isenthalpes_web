@@ -81,7 +81,7 @@ onUnmounted(() => {
 
             <p class="popup-message">
               <strong>Isenth'Alpes</strong> vous propose ses services
-              <span class="popup-date">à partir du 2 avril 2025</span>
+              <span class="popup-date">à partir du 2 avril 2026</span>
             </p>
 
             <p class="popup-subtitle">

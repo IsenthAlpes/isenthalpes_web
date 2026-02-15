@@ -7,8 +7,9 @@ const services = [
     intro: "L'excellence thermique pour votre habitat",
     description: "Des systèmes de chauffage haut de gamme adaptés à vos besoins. Pompes à chaleur dernière génération, chaudières à condensation premium, planchers chauffants basse température : nos solutions allient performance énergétique et confort absolu.",
     image: '/pictures/service/heating-service.png',
+    url: '/chauffage',
     features: [
-      'Pompes à chaleur air/eau et géothermie',
+      'Pompes à chaleur air/eau',
       'Pompe à chaleur Hybride',
       'Chaudières gaz à condensation haute efficacité',
       'Planchers chauffants hydrauliques',
@@ -22,10 +23,10 @@ const services = [
     intro: 'La fraîcheur maîtrisée avec élégance',
     description: "Des systèmes de climatisation haut de gamme vous garantissent une température idéale en toute saison. Silencieux, économes et esthétiques, ils s'intègrent parfaitement à votre intérieur tout en respectant l'environnement.",
     image: '/pictures/service/cooling-service.png',
+    url: "/climatisation",
     features: [
       'Climatisation réversible gainable',
       'Systèmes multi-split design',
-      'VRV/VRF pour grands espaces',
       'Régulation intelligente',
       'Plancher Rafraîchissant'
     ],
@@ -36,8 +37,9 @@ const services = [
     icon: 'plumbing',
     title: 'Plomberie',
     intro: "L'art de la plomberie",
-    description: "De la conception à la réalisation, nous vous accompagnons pour créer des espaces sanitaires d'exception.",
+    description: "De la conception à la réalisation, je vous accompagne pour créer des espaces sanitaires d'exception.",
     image: '/pictures/service/plumbing-service.png',
+    url:"/plomberie",
     features: [
       'Création de salles de bains',
       "Génération d'eau chaude sanitaire",
@@ -50,13 +52,13 @@ const services = [
     icon: 'service',
     title: 'Service & Maintenance',
     intro: "L'engagement d'un accompagnement sans faille",
-    description: "Notre équipe de techniciens experts assure le bon fonctionnement de vos installations tout au long de l'année. Contrats d'entretien personnalisés, interventions rapides, assistance téléphonique : nous sommes à vos côtés à chaque instant.",
+    description: "Je m'assure du bon fonctionnement de vos installations tout au long de l'année. Contrats d'entretien personnalisés, interventions rapides, assistance téléphonique : je suis à vos côtés à chaque instant.",
     image: '/pictures/service/service-service.jpg',
+    url:"/service",
     features: [
-      'Contrats de maintenance premium',
-      'Dépannage urgent 7j/7',
+      'Contrats de maintenance',
+      'Dépannage urgent',
       'Diagnostic et optimisation',
-      'Télésurveillance des équipements'
     ],
     reverse: true
   }
@@ -80,41 +82,40 @@ const services = [
 
         </p>
       </div>
-
-      <div
-        v-for="service in services"
-        :key="service.id"
-        class="service-block"
-        :class="{ reverse: service.reverse }"
-      >
-        <div class="service-image">
-          <img :src="service.image" :alt="service.title" />
-          <div class="image-accent"></div>
-        </div>
-        <div class="service-content">
-          <div class="service-icon" :class="service.icon">
-            <!-- Heating Icon -->
-            <img v-if="service.icon === 'heating'"src="/pictures/icon/icon-heating.svg" width="80%"  height="auto"/>
-            <!-- Cooling Icon -->
-            <img v-if="service.icon === 'cooling'"src="/pictures/icon/icon-cooling.svg" width="70%"  height="auto"/>
-            <!-- Plumbing Icon -->
-            <img v-if="service.icon === 'plumbing'"src="/pictures/icon/icon-plumbing.svg" width="70%"  height="auto"/>
-            <!-- Service Icon -->
-            <img v-if="service.icon === 'service'"src="/pictures/icon/icon-service.svg" width="60%"  height="auto"/>
+      <router-link
+          v-for="service in services"
+          :key="service.id"
+          :to="service.url"
+          target="_blank"
+          rel="noopener"
+          title="Nos réalisations"
+          class="service-block"
+          :class="{ reverse: service.reverse }"
+        >
+          <div class="service-image">
+            <img :src="service.image" :alt="service.title" />
+            <div class="image-accent"></div>
           </div>
-          <h3>{{ service.title }}</h3>
-          <p class="service-intro">{{ service.intro }}</p>
-          <p class="service-description">{{ service.description }}</p>
-          <ul class="service-features">
-            <li v-for="(feature, index) in service.features" :key="index">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              {{ feature }}
-            </li>
-          </ul>
-        </div>
-      </div>
+          <div class="service-content">
+            <div class="service-icon" :class="service.icon">
+              <img v-if="service.icon === 'heating'" src="/pictures/icon/icon-heating.svg" width="80%" height="auto"/>
+              <img v-if="service.icon === 'cooling'" src="/pictures/icon/icon-cooling.svg" width="70%" height="auto"/>
+              <img v-if="service.icon === 'plumbing'" src="/pictures/icon/icon-plumbing.svg" width="70%" height="auto"/>
+              <img v-if="service.icon === 'service'" src="/pictures/icon/icon-service.svg" width="60%" height="auto"/>
+            </div>
+            <h3>{{ service.title }}</h3>
+            <p class="service-intro">{{ service.intro }}</p>
+            <p class="service-description">{{ service.description }}</p>
+            <ul class="service-features">
+              <li v-for="(feature, index) in service.features" :key="index">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                {{ feature }}
+              </li>
+            </ul>
+          </div>
+      </router-link>
     </div>
   </section>
 </template>

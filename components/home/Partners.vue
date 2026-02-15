@@ -4,6 +4,10 @@ interface Partner {
   name: string
   description: string
   category: string
+  icon: string 
+  bgColor: string
+  textColor: string
+  url: string
 }
 
 interface Qualification {
@@ -34,24 +38,29 @@ const qualifications = computed<Qualification[]>(() => qualificationsData.value?
         <span class="section-label">Nos Partenaires</span>
         <h2 class="section-title">Des marques d'excellence</h2>
         <p class="section-description">
-          Nous collaborons avec les plus grandes marques du secteur pour vous garantir
+          Nous nous fournissons auprès des plus grandes marques du secteur pour vous garantir
           des équipements fiables, performants et durables.
         </p>
       </div>
 
       <div class="partners-grid">
-        <div
+        <a
           v-for="partner in partners"
           :key="partner.id"
+          :href="partner.url"
+          target="_blank"
+          rel="noopener noreferrer"
           class="partner-card"
         >
           <div class="partner-logo">
-            <span class="partner-initial">{{ partner.name.charAt(0) }}</span>
+            <!-- <span class="partner-initial">{{ partner.name.charAt(0) }}</span> -->
+              <img class="partenaire-icon" :style="{ color: partner.textColor }" :src="partner.icon" width="150%"  height="auto"> 
+              </img>
           </div>
           <h3>{{ partner.name }}</h3>
           <p>{{ partner.description }}</p>
           <span class="partner-category">{{ partner.category }}</span>
-        </div>
+        </a>
       </div>
 
       <!-- Section Qualifications -->
@@ -160,6 +169,15 @@ const qualifications = computed<Qualification[]>(() => qualificationsData.value?
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+.partenaire-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px; /* Ajustez selon votre design */
+  height: 75px;
+  border-radius: 50%; /* Si vous voulez un rond */
 }
 
 .partner-card:hover .partner-logo {

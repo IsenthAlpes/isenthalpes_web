@@ -1,40 +1,27 @@
 partners:
   - id: 1
-    name: Daikin
-    description: Leader mondial de la climatisation et des pompes à chaleur
-    category: Climatisation & PAC
+    name: "CEDEO"
+    description: "allié incontournable pour les équipements essentiels (pompes à chaleur, robinetterie technique). CEDEO garantit des solutions éprouvées et innovantes qui assurent le fonctionnement parfait de votre installation"
+    category: "Chauffage, Climatisation, Sanitaire"
+    icon: "/pictures/fournisseurs/cedeo-logo2022.jpg"
+    bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
+    textColor: "#ffffff"
+    url: "https://www.cedeo.fr/"
 
   - id: 2
-    name: Atlantic
-    description: Solutions de confort thermique Made in France
-    category: Chauffage
+    name: "Espace Aubade"
+    description: "Une source d'inspiration incontournable pour les amoureux de belles matières et de salles de bain personnalisées. Ils se distinguent par des gammes audacieuses qui apportent la touche finale et unique à vos installationse"
+    category: "Sanitaire et Salle de bain"
+    icon: "/pictures/fournisseurs/aubade-blue.jpg"
+    bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
+    textColor: "#ffffff"
+    url: "https://www.espace-aubade.fr/magasins/grenoble-192.html"
 
   - id: 3
-    name: Viessmann
-    description: Excellence allemande en systèmes de chauffage
+    name: "Leroy Merlin"
+    description: "L'allié accessibilité pour finaliser votre projet : une gamme immense de meubles de salle de bain, miroirs et accessoires tendance. Idéal pour équiper votre pièce avec style et maîtriser votre budget finition."
     category: Chaudières
-
-  - id: 4
-    name: Grohe
-    description: Robinetterie design et innovation sanitaire
-    category: Plomberie
-
-  - id: 5
-    name: Mitsubishi Electric
-    description: Technologies de pointe pour le confort climatique
-    category: Climatisation
-
-  - id: 6
-    name: Hansgrohe
-    description: "L'art de la douche et robinetterie premium"
-    category: Sanitaire
-
-  - id: 7
-    name: Saunier Duval
-    description: Chauffage et eau chaude sanitaire depuis 1907
-    category: Chauffage
-
-  - id: 8
-    name: Toshiba
-    description: Innovation japonaise pour le confort intérieur
-    category: Climatisation
+    icon: "/pictures/fournisseurs/Leroy-Merlin-Logo-1996.jpg"
+    bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
+    textColor: "#ffffff"
+    url: "https://www.leroymerlin.fr"

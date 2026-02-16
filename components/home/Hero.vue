@@ -77,8 +77,25 @@ const expertises = [
           <path d="M7 17l9.2-9.2M17 17V7H7"/>
         </svg>
       </a>
-      <div class="hero-content">
+      <!-- <div class="hero-content">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.8268632440117!2d5.698957276595767!3d45.21083895030732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af393ae45a637%3A0x1d7a1b7ad7ba0c6f!2s2%20Rue%20Rosa%20Lee%20Parks%2C%2038950%20Saint-Martin-le-Vinoux!5e0!3m2!1sfr!2sfr!4v1769610852624!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
+      <div class="hero-content-2">
+        <!-- <iframe 
+          src="https://www.google.com/maps/d/edit?mid=1xjpLCTcR9Ua3UK-76v-2z1RxhnnA298&usp=sharing" 
+           width="100%" 
+           height="450" 
+           style="border:0;" 
+           class="map-frame"
+           loading="lazy"
+        ></iframe> -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1xjpLCTcR9Ua3UK-76v-2z1RxhnnA298&ehbc=2E312F&noprof=1"
+          width="100%" 
+           height="450" 
+           style="border:0;" 
+           class="map-frame"
+           loading="lazy">
+        </iframe>
       </div>
     </div>
   </section>
@@ -130,6 +147,20 @@ const expertises = [
   max-width: 1200px;
   width: 100%;
   padding: 1rem;
+}
+
+.hero-content-2 {
+  width: 100%;
+  max-width: 1000px; /* Ou la largeur que vous souhaitez */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.map-frame {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  display: block;
+  border-radius: 8px; /* Un petit arrondi pour faire plus moderne */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Une petite ombre pour le relief */
 }
 
 

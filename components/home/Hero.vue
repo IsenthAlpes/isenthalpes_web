@@ -38,7 +38,9 @@ const expertises = [
     <div class="hero-background"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2 class="hero-title">Isenth'Alpes</h2>
+      <h2 class="hero-title">
+        Isenth'Alpes <span class="legal-suffix">SARL</span>
+      </h2>
       <p class="hero-subtitle">
         La maîtrise des fluides, le confort au sommet
       </p>
@@ -167,6 +169,17 @@ const expertises = [
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.legal-suffix {
+  font-size: clamp(2.5rem, 6vw, 2.5rem);
+  opacity: 0.85;     /* Optionnel : le rend un peu plus discret/gris */
+  font-weight: normal; /* Optionnel : enlève le gras si le H2 est en gras */
+  vertical-align: middle; /* Optionnel : aligne le texte au milieu de la ligne */
   color: white;
   margin-bottom: 1rem;
   text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);

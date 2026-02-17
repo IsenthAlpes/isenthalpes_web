@@ -79,7 +79,6 @@ const services = [
             est la garantie d'un diagnostic précis et d'une installation durable. 
             De la simple fuite d'eau à l'installation complète de votre système de chauffage, 
             bénéficiez d'un savoir-faire local, pointu et à l'écoute de vos besoins.
-
         </p>
       </div>
       <router-link
@@ -157,12 +156,18 @@ const services = [
 }
 
 .section-description {
-  font-size: 1.15rem;
-  color: var(--text-light);
-  max-width: 1200px;
+  /* 1. Centrer le bloc au milieu de l'écran */
+  max-width: 1000px;
   margin: 0 auto;
-  line-height: 1.8;
-  text-align: center;
+  
+  /* 2. Aligner le texte */
+  text-align: justify; /* Bords droits à gauche et à droite */
+  
+  /* 3. Esthétique */
+  line-height: 1.6;
+  padding: 0 20px;
+  color: #555;       /* Gris foncé souvent plus élégant que le noir pur */
+  text-align-last: center; /* (Optionnel) Centre la toute dernière ligne du paragraphe */
 }
 
 .service-block {

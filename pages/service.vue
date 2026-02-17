@@ -144,7 +144,7 @@ const ctaConfig = {
       </div>
     </section>
 
-    <!-- Contracts Section -->
+    <!-- Contracts Section
     <section class="contracts-section">
       <div class="container">
         <div class="section-header">
@@ -179,7 +179,7 @@ const ctaConfig = {
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
     <section class="cta-section">

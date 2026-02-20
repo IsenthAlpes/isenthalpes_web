@@ -139,6 +139,7 @@ const { openModal } = useContactModal();
   padding: 0.7rem 1.5rem;
   border-radius: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  cursor: pointer;
 }
 
 .btn-contact::after {

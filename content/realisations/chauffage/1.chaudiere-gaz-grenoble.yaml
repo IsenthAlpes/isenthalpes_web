@@ -5,8 +5,8 @@ duration: 3 jours
 price: "4 500 €"
 order: 1
 images:
-  - https://isenthalpes.com/pictures/realisations/chauffage/Chaudiere-gaz-final.png
-  - https://isenthalpes.com/pictures/realisations/chauffage/Chaudiere-gaz-2.JPG
+  - https://isenthalpes.com/pictures/realisations/chauffage/Chaudiere-gaz-final.webp
+  - https://isenthalpes.com/pictures/realisations/chauffage/Chaudiere-gaz-2.webp
 features:
   - Rendement 95%
   - Thermostat connecté

@@ -106,6 +106,7 @@ h3 {
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s, opacity 0.2s;
+  cursor: pointer;
 }
 
 .action-btn:hover {

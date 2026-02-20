@@ -293,6 +293,7 @@ const { openModal } = useContactModal();
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .cta-button:hover {

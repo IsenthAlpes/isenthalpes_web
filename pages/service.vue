@@ -61,15 +61,16 @@ interface Contract {
   features: string[]
 }
 
-const { data: realisationsData } = await useAsyncData('realisations-service', () =>
-  queryContent('/realisations/service').find()
-)
-
 const { data: contractsData } = await useAsyncData('contracts', () =>
   queryContent('/contrats').findOne()
 )
 
 const realisations = computed<Realisation[]>(() => realisationsData.value || [])
+// Ajoutez <Realisation> juste après queryContent
+const { data: realisationsData } = await useAsyncData('realisations-service', () => 
+  queryContent<Realisation>('/realisations/service').find() 
+)
+
 const contracts = computed<Contract[]>(() => contractsData.value?.contracts || [])
 
 const heroConfig = {
@@ -99,6 +100,12 @@ const ctaConfig = {
   description: 'Contactez-nous pour un diagnostic gratuit',
   buttonText: 'Nous contacter'
 }
+
+// 1. On importe la télécommande
+import { useContactModal } from '@/composables/useContactModal';
+
+// 2. On récupère la fonction pour ouvrir
+const { openModal } = useContactModal();
 </script>
 
 <template>
@@ -186,7 +193,7 @@ const ctaConfig = {
       <div class="container">
         <h2>{{ ctaConfig.title }}</h2>
         <p>{{ ctaConfig.description }}</p>
-        <NuxtLink to="/#contact" class="cta-button">
+        <NuxtLink @click="openModal" class="cta-button">
           {{ ctaConfig.buttonText }}
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>

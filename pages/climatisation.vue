@@ -50,12 +50,11 @@ interface Realisation {
   features: string[]
 }
 
-const { data } = await useAsyncData('realisations-climatisation', () =>
-  queryContent('/realisations/climatisation').find()
+const realisations = computed<Realisation[]>(() => realisationsData.value || [])
+// Ajoutez <Realisation> juste après queryContent
+const { data: realisationsData } = await useAsyncData('realisations-climatisation', () => 
+  queryContent<Realisation>('/realisations/climatisation').find() 
 )
-
-const realisations = computed<Realisation[]>(() => data.value || [])
-
 const heroConfig = {
   title: 'Climatisation',
   subtitle: 'Systèmes de climatisation haute performance pour votre confort été comme hiver',
@@ -77,6 +76,12 @@ const ctaConfig = {
   description: 'Contactez-nous pour un devis personnalisé et gratuit',
   buttonText: 'Demander un devis'
 }
+
+// 1. On importe la télécommande
+import { useContactModal } from '@/composables/useContactModal';
+
+// 2. On récupère la fonction pour ouvrir
+const { openModal } = useContactModal();
 </script>
 
 <template>
@@ -127,7 +132,7 @@ const ctaConfig = {
       <div class="container">
         <h2>{{ ctaConfig.title }}</h2>
         <p>{{ ctaConfig.description }}</p>
-        <NuxtLink to="/#contact" class="cta-button">
+        <NuxtLink @click="openModal" class="cta-button">
           {{ ctaConfig.buttonText }}
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>

@@ -19,6 +19,14 @@ const closeMenu = () => {
 watch(route, () => {
   closeMenu()
 })
+
+
+// 1. On importe la télécommande
+import { useContactModal } from '@/composables/useContactModal';
+
+// 2. On récupère la fonction pour ouvrir
+const { openModal } = useContactModal();
+
 </script>
 
 <template>
@@ -34,7 +42,9 @@ watch(route, () => {
           <li><NuxtLink to="/#expertises" @click="closeMenu">Expertises</NuxtLink></li>
           <li><NuxtLink to="/#services" @click="closeMenu">Services</NuxtLink></li>
           <li><NuxtLink to="/#partenaires" @click="closeMenu">Partenaires</NuxtLink></li>
-          <li><NuxtLink to="/#contact" class="btn-contact" @click="closeMenu">Contact</NuxtLink></li>
+          <!-- <li><NuxtLink to="/#contact" class="btn-contact" @click="closeMenu">Contact</NuxtLink></li> -->
+          <!-- Ajout pour ouverture de pop-up au clic -->
+          <li><NuxtLink class="btn-contact" @click="openModal">Contact</NuxtLink></li>
         </ul>
       </nav>
       <button class="mobile-menu-btn" :class="{ active: menuOpen }" @click="toggleMenu">
@@ -265,4 +275,5 @@ watch(route, () => {
     height: 35px;
   }
 }
+
 </style>

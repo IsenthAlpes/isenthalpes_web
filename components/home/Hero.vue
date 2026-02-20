@@ -176,14 +176,16 @@ const expertises = [
 }
 
 .legal-suffix {
-  font-size: clamp(2.5rem, 6vw, 2.5rem);
-  opacity: 0.85;     /* Optionnel : le rend un peu plus discret/gris */
-  font-weight: normal; /* Optionnel : enlève le gras si le H2 est en gras */
-  vertical-align: middle; /* Optionnel : aligne le texte au milieu de la ligne */
-  color: white;
-  margin-bottom: 1rem;
-  text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 0.8s ease-out;
+  /* C'est ici que la magie opère : */
+  font-size: 0.4em; /* Le SARL fera toujours 40% de la taille du titre */
+  
+  font-weight: normal; 
+  opacity: 0.85;
+  text-transform: uppercase;
+  margin-left: 10px; /* Un peu d'espace entre Isenth'Alpes et SARL */
+  vertical-align: middle; 
+  
+  /* Pas besoin de répéter color, animation ou text-shadow, le h2 les transmet */
 }
 
 .hero-subtitle {

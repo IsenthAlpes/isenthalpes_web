@@ -34,7 +34,7 @@ const expertises = [
 
 <template>
   <section id="accueil" class="hero">
-    <SharedAnnouncementPopup />
+    <!-- <SharedAnnouncementPopup /> -->
     <div class="hero-background"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">

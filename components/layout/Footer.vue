@@ -113,7 +113,7 @@ const passerAppel = () => {
         <p>&copy; {{ currentYear }} Isenth'Alpes - Tous droits réservés</p>
         <div class="legal-links">
           <a href="/Mentions legales isenthalpes.pdf" download="Mentions legales isenthalpes.pdf">Mentions légales</a>
-          <a href="#">CGV</a>
+          <a href="/CGV Isenth'Alpes 2026.pdf" download="CGV Isenth'Alpes 2026.pdf">CGV</a>
         </div>
       </div>
     </div>

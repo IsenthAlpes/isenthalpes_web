@@ -44,6 +44,22 @@ const expertises = [
       <p class="hero-subtitle">
         La maîtrise des fluides, le confort au sommet
       </p>
+
+      <div class="hero-badges">
+        <div class="badge-bubble">
+          <img src="/pictures/qualification/logo-qualipac-rge.png" alt="QualiPAC" />
+        </div>
+        <div class="badge-bubble">
+          <img src="/pictures/qualification/certification-rge.png" alt="RGE" />
+        </div>
+        <div class="badge-bubble">
+          <img src="/pictures/qualification/logo-pg.png" alt="Professionnel du Gaz" />
+        </div>
+        <div class="badge-bubble">
+          <img src="/pictures/qualification/Logo-manip-FF.png" alt="Manipulateur Fluide" />
+        </div>
+      </div>
+
       <div id="expertises" class="expertise-cards">
         <NuxtLink
           v-for="(expertise, index) in expertises"
@@ -120,8 +136,6 @@ const expertises = [
   left: 0;
   right: 0;
   bottom: 0;
-  /*background:
-    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); */
   background-image: url('/pictures/fond-image.png');
   background-size: cover;
   background-position: center;
@@ -153,18 +167,17 @@ const expertises = [
 
 .hero-content-2 {
   width: 100%;
-  max-width: 1000px; /* Ou la largeur que vous souhaitez */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
 
 .map-frame {
-  width: 100%; /* Prend toute la largeur du conteneur */
+  width: 100%;
   display: block;
-  border-radius: 8px; /* Un petit arrondi pour faire plus moderne */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Une petite ombre pour le relief */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
 
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -176,26 +189,60 @@ const expertises = [
 }
 
 .legal-suffix {
-  /* C'est ici que la magie opère : */
-  font-size: 0.4em; /* Le SARL fera toujours 40% de la taille du titre */
-  
+  font-size: 0.4em;
   font-weight: normal; 
   opacity: 0.85;
   text-transform: uppercase;
-  margin-left: 10px; /* Un peu d'espace entre Isenth'Alpes et SARL */
+  margin-left: 10px;
   vertical-align: middle; 
-  
-  /* Pas besoin de répéter color, animation ou text-shadow, le h2 les transmet */
 }
 
 .hero-subtitle {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* Réduit pour faire de la place aux badges */
   font-weight: 300;
   letter-spacing: 1px;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
+
+/* --- DEBUT CSS DES BADGES --- */
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Espace entre les bulles */
+  margin-bottom: 3.5rem; /* Espace avec les cartes d'expertise */
+  flex-wrap: nowrap; /* Force l'affichage sur une ligne */
+  animation: fadeInUp 0.8s ease-out 0.3s both; /* Animation identique au reste */
+}
+
+.badge-bubble {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%; /* Le cercle parfait */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.badge-bubble img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* L'image s'adapte dans la bulle sans déborder */
+  display: block;
+}
+/* --- FIN CSS DES BADGES --- */
 
 .expertise-cards {
   display: grid;
@@ -294,7 +341,6 @@ const expertises = [
   font-weight: 600;
   transition: all 0.3s ease;
   animation: fadeInUp 0.8s ease-out 0.6s both;
-  
 }
 
 .cta-button:hover {
@@ -335,7 +381,19 @@ const expertises = [
 
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Ajustement mobile pour les badges */
+  .hero-badges {
+    gap: 1rem;
     margin-bottom: 2.5rem;
+  }
+
+  .badge-bubble {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
   }
 
   .expertise-cards {
@@ -390,7 +448,19 @@ const expertises = [
 
   .hero-subtitle {
     font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Ajustement téléphone pour les badges */
+  .hero-badges {
+    gap: 0.6rem;
     margin-bottom: 2rem;
+  }
+
+  .badge-bubble {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
   }
 
   .expertise-cards {

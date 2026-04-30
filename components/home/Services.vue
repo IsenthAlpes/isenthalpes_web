@@ -59,6 +59,8 @@ const services = [
       'Contrats de maintenance',
       'Dépannage urgent',
       'Diagnostic et optimisation',
+      'Mise en service clim',
+      'Certificat de conformité Gaz',
     ],
     reverse: true
   }

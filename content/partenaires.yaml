@@ -8,19 +8,19 @@ partners:
     textColor: "#ffffff"
     url: "https://www.cedeo.fr/"
 
-  - id: 2
-    name: "Espace Aubade"
-    description: "Une source d'inspiration incontournable pour les amoureux de belles matières et de salles de bain personnalisées. Ils se distinguent par des gammes audacieuses qui apportent la touche finale et unique à vos installationse"
-    category: "Sanitaire et Salle de bain"
-    icon: "/pictures/fournisseurs/aubade-blue.jpg"
-    bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
-    textColor: "#ffffff"
-    url: "https://www.espace-aubade.fr/magasins/grenoble-192.html"
+  # - id: 2
+  #   name: "Espace Aubade"
+  #   description: "Une source d'inspiration incontournable pour les amoureux de belles matières et de salles de bain personnalisées. Ils se distinguent par des gammes audacieuses qui apportent la touche finale et unique à vos installationse"
+  #   category: "Sanitaire et Salle de bain"
+  #   icon: "/pictures/fournisseurs/aubade-blue.jpg"
+  #   bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
+  #   textColor: "#ffffff"
+  #   url: "https://www.espace-aubade.fr/magasins/grenoble-192.html"
 
-  - id: 3
+  - id: 2
     name: "Leroy Merlin"
     description: "L'allié accessibilité pour finaliser votre projet : une gamme immense de meubles de salle de bain, miroirs et accessoires tendance. Idéal pour équiper votre pièce avec style et maîtriser votre budget finition."
-    category: Chaudières
+    category: Salle de bain, Ameublement
     icon: "/pictures/fournisseurs/Leroy-Merlin-Logo-1996.jpg"
     bgColor: "radial-gradient(rgba(128,128,128,1), rgba(255,3255,255,1))"
     textColor: "#ffffff"
